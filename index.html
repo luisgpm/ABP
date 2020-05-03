@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>LUYANGY</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="menu" >
+				<li id="logo"><a href="#Home">LUYANGY</a> </li>
+				<li><a href="#home" class="active">Inicio</a></li>
+				<li ><a href="#Categorias" onclick="myFunction()" class="dropbtn">Categorias <span><i class="fa fa-angle-down"></i></span></a>
+					<div class="dropdown">
+  						<div id="myDropdown" class="dropdown-content">
+    						<a href="#Tecnologia">Tecnologia</a>
+							<a href="#ciencia">Ciencia</a>
+							<a href="#Economia">Economia</a>
+							<a href="#Matematicas">Matematicas</a>
+  						</div>
+					</div>
+				</li>
+				<li><a href="#contact">Nosotros</a></li>
+				<li><a href="#LOGIN" class="bottom">LOGIN</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="contenido">
+		<div class="lado-izquierdo">
+			<div>
+				<img src="slider/img/1.jpg" class="slider">
+				<div>
+					<h1>Post´s Principales</h1>
+					<div>
+						<div class="resumen-post">
+							<img src="img/no-image.png" class="img-principal-p">
+						</div>
+						<h1>Titulo</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi repudiandae.</p>
+					</div>
+					<div>
+						<div class="resumen-post">
+							<img src="img/no-image.png" class="img-principal-p">
+						</div>
+						<h1>titulo</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, distinctio, id eius sit quasi. Dolorum repellendus delectus ducimus.</p>
+					</div>
+					<div>
+						<div class="resumen-post">
+							<img src="img/no-image.png" class="img-principal-p">
+						</div>
+						<h1>Titulo</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ad molestias, eius ullam corporis  dolorem provident suscipit fuga! Dignissimos, eaque!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lado-derecho">
+			<div>
+				<div>
+					<h1>Post´s Random</h1>
+					<div>
+						<div class="resumen-post">
+							<img src="img/no-image.png" class="img-random">
+						</div>
+						<h1>Titulo</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+					</div>
+					<div>
+						<div class="resumen-post">
+							<img src="img/no-image.png" class="img-random">
+						</div>
+						<h1>Titulo</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+					</div>
+					<div>
+						<div class="resumen-post">
+							<img src="img/no-image.png" class="img-random">
+						</div>
+						<h1>Titulo</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+					</div>
+					<div>
+						<div class="resumen-post">
+							<img src="img/no-image.png" class="img-random">
+						</div>
+						<h1>Titulo</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="lado-derecho-comentario">
+			<div>
+				<div>
+					<h1>Comentarios Recientes</h1>
+					<div>
+						<div class="comentario-index">
+							<img src="img/no-Avatar.png" class="img-random">
+						</div>
+						<h1>Username</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+						<span><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+					</div>
+					<div>
+						<div class="comentario-index">
+							<img src="img/no-Avatar.png" class="img-random">
+						</div>
+						<h1>Username</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+						<span><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+					</div>
+					<div>
+						<div class="comentario-index">
+							<img src="img/no-Avatar.png" class="img-random">
+						</div>
+						<h1>Username</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+						<span><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+					</div>
+					<div>
+						<div class="comentario-index">
+							<img src="img/no-Avatar.png" class="img-random">
+						</div>
+						<h1>Username</h1>
+						<p>"Lorem ipsum dolor sit amet, consectetur adipisicing."</p>
+						<span><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>
+
+</body>
+</html>
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>

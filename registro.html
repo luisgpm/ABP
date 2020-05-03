@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Registro</title>
+	<link rel="stylesheet" href="styles/login-style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="menu" >
+				<li id="logo"><a href="#Home">LUYANGY</a> </li>
+				<li><a href="#home" class="active">Inicio</a></li>
+				<li ><a href="#Categorias" onclick="myFunction()" class="dropbtn">Categorias<span><i class="fa fa-angle-down"></i></span></a>
+					<div class="dropdown">
+  						<div id="myDropdown" class="dropdown-content">
+    						<a href="#Tecnologia">Tecnologia</a>
+							<a href="#ciencia">Ciencia</a>
+							<a href="#Economia">Economia</a>
+							<a href="#Matematicas">Matematicas</a>
+  						</div>
+					</div>
+				</li>
+				<li><a href="#contact">Nosotros</a></li>
+				<li><a href="#LOGIN" class="bottom">LOGIN</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div id="container">
+			<div class="box">
+				<img src="img/no-Avatar.png" alt="">
+				<h1>Registrarse</h1>
+				<h3>correo</h3>
+				<input type="email" name="correo" value="" placeholder="ejemplo@gmail.com">
+				<h3>Username</h3>
+				<input type="text" name="username" value="" placeholder="Username">
+				<h3>Password</h3>
+				<input type="password" id="password-registro" name="password" value="" placeholder="password">
+				<a href="#inicio" class="bottom">regístrarse</a>
+				<p>tienes cuenta? <a href="#login">iniciar Sesión</a></p>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
+
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>

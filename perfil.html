@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Perfil</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/perfil-style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="menu" >
+				<li id="logo"><a href="#Home">LUYANGY</a> </li>
+				<li><a href="#home" class="active">Inicio</a></li>
+				<li ><a href="#Categorias" onclick="myFunction()" class="dropbtn">Categorias<span><i class="fa fa-angle-down"></i></span></a>
+					<div class="dropdown">
+  						<div id="myDropdown" class="dropdown-content">
+    						<a href="#Tecnologia">Tecnologia</a>
+							<a href="#ciencia">Ciencia</a>
+							<a href="#Economia">Economia</a>
+							<a href="#Matematicas">Matematicas</a>
+  						</div>
+					</div>
+				</li>
+				<li><a href="#contact">Nosotros</a></li>
+				<li><a href="#LOGIN" class="bottom">LOGIN</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="box">
+			<div class="lado-izquierdo-perfil">
+				<div>
+					<div>
+						<h1 id="titulo">Datos del usuario</h1>
+						<img src="img/no-Avatar.png" class="img-perfil">
+						<h2>Lorem ipsum dolor sit amet.</h2>
+						<h2>Username</h2>
+					</div>
+				</div>
+			</div>
+			<div class="lado-derecho-perfil">
+				<div class="bio">
+					<h3>Bio</h3>
+					<input type="text" name="bio" id="bio" placeholder="ingrese una Bio...">
+				</div>
+				<h3>Ciudad</h3>
+				<input type="text" name="ciudad" placeholder="ingrese una ciudad">
+				<h3>Sitio Web</h3>
+				<input type="text" name="sitio" placeholder="misitio.com">
+			</div>
+		</div>
+	</main>
+</body>
+</html>
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
