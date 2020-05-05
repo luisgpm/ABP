@@ -58,8 +58,8 @@ body>main>div{
 
 }
 #contenedor-art{
-	width: 820px;
-	padding-left: 100px;
+	width: 780px;
+	padding-left: 70px;
 	padding-right: 50px;
 }
 #contenedor-art>div>div{
@@ -99,7 +99,6 @@ body>main>div{
 
 
 .lado-derecho{
-	margin-left: 70px;
 	width: 29%;
 	border: 1px green solid;
 	background: #6983aa;
@@ -125,7 +124,6 @@ body>main>div{
 }
 
 .lado-derecho-comentario{
-	margin-left: 70px;
 	width: 29%;
 	background: #6983aa;
 	margin-bottom: 40px;
